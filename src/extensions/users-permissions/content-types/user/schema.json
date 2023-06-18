@@ -65,16 +65,7 @@
       "inversedBy": "users",
       "configurable": false
     },
-<<<<<<< HEAD
-    "lastname": {
-      "type": "string"
-    },
-    "ages": {
-      "type": "biginteger"
-    },
-    "phone": {
-      "type": "biginteger"
-=======
+ 
     "avatar": {
       "allowedTypes": [
         "images",
@@ -96,7 +87,6 @@
       "relation": "oneToMany",
       "target": "api::report.report",
       "mappedBy": "user"
->>>>>>> b9bc8a9407553c321380522d630907ecc92ac047
     }
   }
 }
