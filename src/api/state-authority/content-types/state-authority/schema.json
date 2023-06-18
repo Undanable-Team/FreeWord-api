@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "state_authorities",
+  "info": {
+    "singularName": "state-authority",
+    "pluralName": "state-authorities",
+    "displayName": "Государественные органы"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "state_authority"
+    }
+  }
+}

@@ -65,6 +65,7 @@
       "inversedBy": "users",
       "configurable": false
     },
+<<<<<<< HEAD
     "lastname": {
       "type": "string"
     },
@@ -73,6 +74,29 @@
     },
     "phone": {
       "type": "biginteger"
+=======
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "user"
+>>>>>>> b9bc8a9407553c321380522d630907ecc92ac047
     }
   }
 }
